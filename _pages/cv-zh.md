@@ -79,14 +79,21 @@ redirect_from:
 
 软件技能
 ======
-| 熟练 | 看文档基本会 |
-| :-----------------: | :---------: |
-| VISSIM              | Multisim    |
-| Veins               | SolidWorks  |
-| SUMO                | Anylogic    |
-| PPT                 | OMNeT++     |
-| Excel               | AutoCAD     |
-| R                   | OpenTrack   |
-| C++                 |             |
-| Python              |             |
-| MATLAB              |             |
+**熟练：**
+- VISSIM
+- Veins
+- SUMO
+- PPT
+- Excel
+- R
+- C++
+- Python
+- MATLAB
+
+**基础：**
+- Multisim
+- SolidWorks
+- Anylogic
+- OMNeT++
+- AutoCAD
+- OpenTrack

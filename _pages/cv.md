@@ -81,14 +81,21 @@ Courses
 
 Software Skills
 ======
-| Highly Proficient Software Skills | Basic Software Skills |
-| :-------------------------------: | :-------------------: |
-| VISSIM                             | Multisim              |
-| Veins                              | SolidWorks            |
-| SUMO                               | Anylogic              |
-| PPT                                | OMNeT++               |
-| Excel                              | AutoCAD               |
-| R                                  | OpenTrack             |
-| C++                                |                       |
-| Python                             |                       |
-| MATLAB                             |                       |
+**Proficient Software Skills:**
+- VISSIM
+- Veins
+- SUMO
+- PPT
+- Excel
+- R
+- C++
+- Python
+- MATLAB
+
+**Basic Software Skills:**
+- Multisim
+- SolidWorks
+- Anylogic
+- OMNeT++
+- AutoCAD
+- OpenTrack
