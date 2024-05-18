@@ -39,12 +39,13 @@ Academic Achievements
 
 Competitions and Research Projects
 ======
-* 2023: Finalist Team Member in the Global Sustainability Supply Chain Student Competition
-* 2022-2023: Successfully completed the SITP project "Research on Emission Mechanism and Control Technology of Rubber Modified Asphalt Smoke in Urban Roads"
-* 2023-2024: Currently working on the SITP project "Research on Rail Transit Travel Demand Simulation Technology Based on Activity Accessibility"
-* 2023-2024: Currently working on the National Innovation project "Simulation and Trustworthiness Evaluation of Vehicle-Road Communication Interaction in Complex Traffic Scenarios", already won the second prize in the "Tong Lu Ren" Transportation Technology Competition
-* 2022-2023: Achieved excellent midterm results in the Transportation Science and Technology Project "Anthropomorphic Evaluation of Autonomous Driving"
-
+* [1] 2023: Finalist Team Member in the Global Sustainability Supply Chain Student Competition. Responsible for overall scheme design and paper writing.
+* [2] 2022-2023: Successfully completed the SITP project "Research on Emission Mechanism and Control Technology of Rubber Modified Asphalt Smoke in Urban Roads". Responsible for data analysis and paper writing.
+* [3] 2023-2024: Currently working on the SITP project "Research on Rail Transit Travel Demand Simulation Technology Based on Activity Accessibility". Responsible for Anylogic simulation modeling and data analysis.
+* [4] 2023-2024: Currently working on the National Innovation project "Simulation and Trustworthiness Evaluation of Vehicle-Road Communication Interaction in Complex Traffic Scenarios", already won the second prize in the "Tong Lu Ren" Transportation Technology Competition. Responsible for overall thinking, Veins simulation modeling and experiments, data analysis, and paper writing.
+* [5] 2022-2023: Achieved excellent midterm results in the Transportation Science and Technology Project "Anthropomorphic Evaluation of Autonomous Driving", no awards received. Responsible for code and paper writing.
+* [6] 2024: Currently working on the National College Student Statistical Modeling Competition "Public Transportation Travel Choice Model Mining and Optimization Based on NHTS Data - Analysis and Policy Support Combining Discrete Choice Model and XGBoost Algorithm", paper has been submitted. Responsible for overall thinking, code and paper writing.
+  
 Research Interests
 ======
 * Traffic Big Data Analysis (Passenger Flow Prediction, Geographic Information)

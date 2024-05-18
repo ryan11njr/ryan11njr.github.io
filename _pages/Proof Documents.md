@@ -7,7 +7,7 @@ author_profile: true
 
 {% include base_path %}
 
-Downloadable Files
+
 ======
 * [大二校奖学金](http://ryan11njr.github.io/files/大二校奖学金.pdf)
 * [大二校优秀学生](http://ryan11njr.github.io/files/大二校优秀学生.pdf)
