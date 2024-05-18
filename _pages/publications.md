@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Publications"
+title: "Reports and Homeworks"
 permalink: /publications/
 author_profile: true
 ---
