@@ -6,10 +6,15 @@ excerpt: '这份报告合集包含了我大学本科期间的课程作业和报�
   
   
   
-This report collection includes my coursework and reports during my undergraduate years, mainly to demonstrate the improvement of my report writing skills over several semesters, and what I am capable of.'
+This report collection includes my coursework and reports during my undergraduate years, mainly to demonstrate the improvement of my report writing skills over several semesters, and what I am capable of.  
+  
+文档有些大，80mb左右，如果下载速度慢，请挂梯子或耐心等待。
+
+'
 date: 2024-05-18
 #venue: 'Journal 1'
 paperurl: 'http://ryan11njr.github.io/files/Report_Luo_Chenkai.pdf'
+<embed src="http://ryan11njr.github.io/files/Report_Luo_Chenkai.pdf" type="application/pdf" width="100%" height="600px" />
 #citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
 
