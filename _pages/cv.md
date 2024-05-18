@@ -11,11 +11,11 @@ redirect_from:
 
 Education
 ======
-* B.S. in Intelligent Transportation Systems Engineering (Traffic Information and Control Systems), Tongji University, Expected 2024
+* B.S. in Intelligent Transportation Systems Engineering (Traffic Information and Control Systems), Tongji University, Expected 2025
 
 Work experience
 ======
-* 2021-2022: Class Secretary, Intelligent Transportation 13 Class
+* 2021-2022: Class Secretary, Intelligent Transportation Class 13
 * 2022-2023: Student Representative, School of Transportation Engineering
 * 2023-2024: School-level Student Representative, School of Transportation Engineering
 * 2023-2024: Staff Member, Organization Department, Student Union, School of Transportation Engineering
@@ -29,7 +29,7 @@ Volunteer Work
 Academic Achievements
 ======
 * GPA for each semester: 4.46->4.59->4.72->4.77->4.8
-* Overall GPA: 4.67 (First 5 semesters)
+* Overall GPA: 4.68 (First 5 semesters)
 * CET4: 593
 * CET6: 598
 * IELTS: 7.5
