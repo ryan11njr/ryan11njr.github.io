@@ -1,7 +1,7 @@
 ---
 title: 'My Learning Journey: Python, C++, and Transportation Studies'
-date: 2024-05-20
-permalink: /posts/2024/05/20/my-learning-journey/
+date: 2024-05-15
+permalink: /posts/2024/05/15/my-learning-journey/
 tags:
   - Python
   - C++

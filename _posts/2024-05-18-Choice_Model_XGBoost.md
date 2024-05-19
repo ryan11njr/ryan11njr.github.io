@@ -7,6 +7,11 @@ tags:
   - Choice Model
   - Biogeme
 ---
+
+This is a blog post that delves into the application of the XGBoost algorithm, a popular machine learning technique, in choice modeling. The post provides a comprehensive guide on how to implement this algorithm, discussing its advantages and potential challenges. It serves as a valuable resource for anyone interested in enhancing their machine learning skills, particularly in the field of choice modeling.
+
+   
+
 ## **STEP1 数据预处理和分析**
 
 ### <span style="color:deepskyblue">**1.数据预处理(扩样+划分训练集和验证集)**
