@@ -1,0 +1,343 @@
+// 2151216 罗晨凯 运筹学-网络分析 
+#include<cstdio>
+#include<iostream>
+#include<algorithm>
+#include<cmath>
+#include<cstring>
+#include<fstream>
+using namespace std;
+
+#define N 24
+#define M 76
+struct edge{
+	int id,o,d;
+	float len,cap;
+}e[M+1];
+
+//最短路中的相关定义 
+int bian[N+1][N+1];//指向i-j边的id； 
+float avg_dis[N+1];//到其他顶点的平均最短路长度 
+float dis[N+1][N+1]; //两点间最短路矩阵 
+int pre[N+1][N+1];//记录i-j最短路中j的前驱结点 
+int cnt[N+1][M+1]; //每个单源的最短路的中每条边使用次数  
+
+// MST中的相关定义 
+float path[N+1][N+1]; //MST中两点间最短路矩阵 
+int fa[N+1];//MST记录父节点 
+float tot; //MST的最优值 
+
+// 添加5条边中相关定义 
+bool flag[M+1];// 判断每条边是否加入MST中 
+int index[16];// 15条边没被选中，存放他们的index 
+int best5[6];//存最好的5条边的id 
+int add_i[6];//存要加的5条边的id；
+float original,current,best;// original为MST中最短路矩阵总值
+       // current为额外边更新后当前总值 best为当前最优值 
+int num; //计数（我们选5条边的时候的组合次数） 
+float newpath[N+1][N+1]; //（我们选5条边的时候的最短路矩阵） 
+
+inline int find_pre(int source,int x){ //以source为源头的最短路溯源标记 
+	int PRE=pre[source][x];
+	if(PRE==0) return source;
+	else{
+		int BIAN=bian[PRE][x];
+		cnt[source][BIAN]=1;  //情况1允许重复,为+=1   情况2不重复,为=1； 
+		find_pre(source,pre[source][x]);
+	}
+} 
+
+inline void Floyd(){ 
+	for(int k=1;k<=N;k++)
+	for(int i=1;i<=N;i++)
+	for(int j=1;j<=N;j++){
+		if((i!=j)&&(i!=k)&&(j!=k))
+		if(dis[i][j]>dis[i][k]+dis[k][j])
+		{
+			dis[i][j]=dis[i][k]+dis[k][j];
+			pre[i][j]=pre[k][j];//从i到j的最短路径更新为i→k→j，
+			                   //那么i到j最短路径j的前驱就与k到j最短路径j的前驱相同
+		}
+	} 
+	for(int i=1;i<=N;i++){//算平均最短路长度 
+        float tmp=0;  	
+		for(int j=1;j<=N;j++){
+			tmp+=dis[i][j];
+		}
+		avg_dis[i]=tmp/(N-1); //易错点：除以N-1而非N，如果用R语言求mean的话要*N/(N-1) 
+	}	
+	for(int i=1;i<=N;i++){ //统计每个单源的最短路的中每条边使用次数 
+		 for(int j=1;j<=N;j++)
+		 if(i!=j)
+		 find_pre(i,j); 
+	}
+}
+
+int father(int x){ //寻找最高层次的父节点 
+	if (fa[x]!=x) fa[x]=father(fa[x]);
+	return fa[x];
+} 
+void union_father(int x,int y){ //父节点合并 
+	int Fa=father(x);
+	int Fb=father(y);
+	if(Fa!=Fb) fa[Fa]=Fb;
+}
+int cmp(const edge&a,const edge&b){ // 用于sort（）排序的自定义方法 
+	if(a.len<b.len) return 1;
+	else return 0;
+}
+
+inline void kruskal(){
+	for(int i=1;i<=N;i++) fa[i]=i;
+	sort(e+1,e+1+M,cmp); 
+	int k=0;
+	cout<<"被MST选中的边id，以及相连的结点"<<endl;
+	for(int i=1;i<=M;i++){
+		if(father(e[i].o)!=father(e[i].d)){
+			union_father(e[i].o,e[i].d);
+			path[e[i].o][e[i].d]=e[i].len;
+			path[e[i].d][e[i].o]=e[i].len;//初始化MST最短路矩阵 
+			cout<<"边"<<e[i].id<<": 点"<<e[i].o<<" 和点"<<e[i].d<<" 连在一起了，权值为"<<e[i].len<<endl; 
+		 	flag[e[i].id]=1;
+		 	int BIAN=0;
+			 BIAN=bian[e[i].d][e[i].o];
+			 flag[BIAN]=1;//双向边都要标记！ 
+				tot+=e[i].len;
+				k++;
+		}
+		if(k==N-1) break;  
+	}
+	cout<<endl;
+	cout<<"MST:  ";
+	cout<<tot<<endl;
+	cout<<endl;
+	
+	cout<<"被kruskal后的矩阵" <<endl;
+	for(int i=1;i<=N;i++){
+		cout<<i<<": ";
+		for(int j=1;j<=N;j++){
+			if(path[i][j]<9999)
+			cout<<path[i][j]<<"  ";	 
+			else cout<<'M'<<"  "; 
+		}cout<<endl;
+		}
+	
+	for(int k=1;k<=N;k++)
+	for(int i=1;i<=N;i++)
+	for(int j=1;j<=N;j++){
+		if((i!=j)&&(i!=k)&&(j!=k))
+		if(path[i][j]>path[i][k]+path[k][j])
+		{
+			path[i][j]=path[i][k]+path[k][j];
+		}
+	} 
+	cout<<"MST中最短路矩阵"<<endl;
+	cout<<"   ";
+	for(int i=1;i<=N;i++)
+	cout<<i<<"  "; 
+	cout<<endl;
+	for(int i=1;i<=N;i++){
+		cout<<i<<": ";
+		for(int j=1;j<=N;j++){
+			cout<<path[i][j]<<"  ";	 
+			original+=path[i][j]; //顺带计算原MST最短路矩阵总值； 
+		}cout<<endl;
+		}
+		best=original; // 为best赋初始值
+		printf("original: %.2f ", original); 
+	cout<<endl;
+	ofstream outputFile("MST_path.csv"); 
+	    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            outputFile<<path[i][j]; // 写入矩阵元素
+            if (j != N) {
+                outputFile << ","; // 用逗号分隔每个元素
+            }
+        }
+        outputFile << endl; // 写入换行符
+    }
+    outputFile.close(); // 关闭文件
+    cout << "矩阵已成功保存到 MST_path.csv 文件。" <<endl;
+}
+
+inline void add_edge(){ //加入边 
+	for(int i=1;i<=N;i++){   //为了不影响原来的path矩阵，先复制一下 
+		for(int j=1;j<=N;j++)
+		newpath[i][j]=path[i][j];
+	} 
+	for(int i=1;i<=5;i++)
+	{
+		int tmp=0,tmp_o=0,tmp_d=0,tmp_len;
+		tmp=add_i[i];
+		tmp_o=e[tmp].o;
+		tmp_d=e[tmp].d;
+		tmp_len=e[tmp].len;
+		if(newpath[tmp_o][tmp_d]>tmp_len){
+			newpath[tmp_o][tmp_d]=tmp_len;  //用额外边更新树 
+			newpath[tmp_d][tmp_o]=tmp_len;  //易错，千万注意，因为是无向边!!! 
+		}
+	}
+     //用Floyd算更新后的最短路矩阵  
+	for(int k=1;k<=N;k++)
+	for(int i=1;i<=N;i++)
+	for(int j=1;j<=N;j++){
+		if((i!=j)&&(i!=k)&&(j!=k))
+		if(newpath[i][j]>newpath[i][k]+newpath[k][j])
+		{
+			newpath[i][j]=newpath[i][k]+newpath[k][j];
+		}
+	}  
+	current=0;
+	for(int i=1;i<=N;i++)
+		for(int j=1;j<=N;j++)
+			current+=newpath[i][j]; 
+	if(best>current){
+		for(int i=1;i<=5;i++)
+		best5[i]=add_i[i];
+		best=current;
+		cout<<"进行组数： "<<num<<"  更新值：";
+		printf("%.2f ", best);
+		cout<<endl;
+	}
+}
+
+inline void choose() {
+	int tmp_cnt=0;
+	best=original;
+		printf("开始 %.2f",best); 
+		cout<<endl; 
+	for(int i=1;i<=M;i++){
+		if(!flag[e[i].id])
+		index[++tmp_cnt]=e[i].id;
+	}
+	int ai=0,bi=0,ci=0,di=0,ei=0;
+	for(int a=1;a<=30;a++){  //遍历c（5,30）种组合，不重样 
+		add_i[1]=index[a];
+		for(int b=a+1;b<=30;b++){
+			add_i[2]=index[b];
+			for(int c=b+1;c<=30;c++ ){
+				add_i[3]=index[c];
+				for(int d=c+1;d<=30;d++){
+					add_i[4]=index[d];
+					for(int k=d+1;k<=30;k++){
+					    add_i[5]=index[k];
+					    num++; 
+						add_edge();
+					   
+					}
+				}
+			}
+		}
+	}
+	cout<<endl; 
+	cout<<"最好的5条边选择为：";
+	for(int i=1;i<=5;i++){
+		cout<<best5[i]<<' ';
+		add_i[i]=best5[i];
+	}
+	cout<<endl; 
+		printf("结束 %.2f" ,best);
+	cout<<endl;
+	cout<<"选了之后的最短路矩阵" <<endl;
+	add_edge();
+	ofstream outputFile("add_path.csv"); 
+	    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            outputFile<<newpath[i][j]; // 写入矩阵元素
+            if (j != N) {
+                outputFile << ","; // 用逗号分隔每个元素
+            }
+        }
+        outputFile << endl; // 写入换行符
+    }
+    outputFile.close(); // 关闭文件
+    cout << "矩阵已成功保存到 add_path.csv 文件。" <<endl;
+	
+}
+
+inline void getdata(){
+	//初始化dis,path矩阵
+	for(int i=1;i<=N;i++){
+		for(int j=1;j<=N;j++){
+			if(i!=j) 
+		{
+		 path[i][j]=99999;
+		 dis[i][j]=99999; 
+		}	
+		}
+	}
+    cout<<"读入边"<<endl;
+	for(int i=1;i<=76;i++){
+		int id,o,d;
+		float len,cap;
+		cin>>id>>o>>d;
+  		scanf("%f%f",&len,&cap);
+		dis[o][d]=len;  
+		bian[o][d]=i; //指向o-d边的id 
+		pre[o][d]=o;  // d的前驱结点为o 
+		e[i].id=id;e[i].o=o;e[i].d=d;
+		e[i].len=len;e[i].cap=cap; 
+	} 
+		cout<<"读入结束"<<endl;
+}
+
+inline void output1(){
+	cout<<"最短路矩阵"<<endl;
+	cout<<"   ";
+	for(int i=1;i<=N;i++)
+	cout<<i<<"  "; 
+	cout<<endl;
+	for(int i=1;i<=N;i++){
+		cout<<i<<": ";
+		for(int j=1;j<=N;j++){
+			if(dis[i][j]<9999)
+			cout<<dis[i][j]<<"  ";
+			else cout<<'M'<<"  "; 
+		}
+	cout<<endl;
+	}	
+	cout<<"最短路平均值  接近度中心性"<<endl;
+	for(int i=1;i<=N;i++)
+	{
+		printf("%d : %.2f  %.2f",i,avg_dis[i],1/avg_dis[i]);
+		cout<<" ";
+		if(N%8==0) cout<<endl;
+	}
+	cout<<endl;
+	cout<<"原始边在最短路中的使用次数（不重复，max=24）"<<endl;
+	for(int j=1;j<=M;j++)	
+	{
+		int tmp=0;
+		for(int i=1;i<=N;i++)
+		tmp+=cnt[i][j];
+		cout<<"边"<<j<<": "<<tmp<<"  ";
+		if(j%10==0) cout<<endl;  
+	}
+	cout<<endl;
+	//可以直接输出到文件。 
+	ofstream outputFile("cnt.csv"); 
+	outputFile<<"id，count" <<endl;
+	for(int j=1;j<=M;j++)	
+	{
+		int tmp=0;
+		for(int i=1;i<=N;i++)
+		tmp+=cnt[i][j];
+		outputFile<<j<<","<<tmp<<endl; 
+	}
+    outputFile.close(); // 关闭文件
+    cout << "矩阵已成功保存到 cnt.csv 文件。" <<endl;
+}
+
+int main(){
+	getdata();//读入 
+	Floyd();//多源，但是从点入手需要把边联系起来；
+	//bellman-ford(); 虽然是单源，但是直接处理边 ,较方便 
+	//dijkstra()
+	//spfa
+	output1();//输出最短路矩阵dis、最短路长度平均值;
+	         //输出最短路径使用次数，输出排序； 
+	kruskal();//输出最小生成树，mst中最短路矩阵path
+	choose();//选5条边 
+	return 0; 
+}
+
+
