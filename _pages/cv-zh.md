@@ -59,42 +59,24 @@ redirect_from:
 
 基础课程
 ======
-* 交通设计
-* 交通规划
-* 交通工程
-* 交通管理和控制
-* 交通系统原理
-* 运输经济学
-* 运筹学
-* 交通科技创新竞赛
-* 交通运输数据技术
-* 智能轨道交通系统
-* 无人驾驶控制系统
-* 轨道交通管理和控制
-* 信号与系统
-* 信息传输原理
-* 电子技术基础（数电+模电）
-* 理论力学
-* 画法几何
-* 工程制图
+* 交通设计、交通规划、交通工程
+* 交通管理和控制、交通系统原理
+*	运输经济学
+*	运筹学
+*	交通科技创新竞赛、交通运输数据技术
+*	智能轨道交通系统、无人驾驶控制系统、轨道交通管理和控制
+*	自动控制原理、信号与系统、信息传输原理、电子技术基础（数电+模电）
+*	理论力学、画法几何、工程制图
+
 
 软件技能
 ======
 **熟练：**
-- VISSIM
-- Veins
-- SUMO
+- VISSIM、Veins、SUMO
 - PPT
-- Excel
-- R
-- C++
-- Python
-- MATLAB
+- Excel、R
+- C++、Python、MATLAB
 
 **基础：**
-- Multisim
-- SolidWorks
-- Anylogic
-- OMNeT++
-- AutoCAD
-- OpenTrack
+- Multisim、Anylogic、OpenTrack、OMNeT++
+- AutoCAD、SolidWorks

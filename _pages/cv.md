@@ -83,20 +83,11 @@ Courses
 Software Skills
 ======
 **Proficient Software Skills:**
-- VISSIM
-- Veins
-- SUMO
+- VISSIM、Veins、SUMO
 - PPT
-- Excel
-- R
-- C++
-- Python
-- MATLAB
+- Excel、R
+- C++、Python、MATLAB
 
 **Basic Software Skills:**
-- Multisim
-- SolidWorks
-- Anylogic
-- OMNeT++
-- AutoCAD
-- OpenTrack
+- Multisim、Anylogic、OpenTrack、OMNeT++
+- AutoCAD、SolidWorks
