@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "中文简介"
+title: "中文简历"
 permalink: /cv-zh/
 author_profile: true
 redirect_from:

@@ -1,7 +1,7 @@
 ---
 title: ' SUMO, OMNet++, and Veins for Vehicular Network Simulation'
-date: 2024-05-19
-permalink: /posts/2024/05/19/learn_veins/
+date: 2024-05-18
+permalink: /posts/2024/05/18/learn_veins/
 tags:
   - SUMO
   - OMNet++

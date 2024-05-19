@@ -1,7 +1,7 @@
 ---
 title: ' Learn Python: Class Notes'
-date: 2024-05-19
-permalink: /posts/2024/05/19/learn_python/
+date: 2024-05-16
+permalink: /posts/2024/05/16/learn_python/
 tags:
   - Python
 ---

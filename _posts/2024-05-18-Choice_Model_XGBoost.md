@@ -1,7 +1,7 @@
 ---
 title: 'choice model using xgboost'
-date: 2024-05-19
-permalink: /posts/2024/05/19/choice_model_xgboost/
+date: 2024-05-17
+permalink: /posts/2024/05/17/choice_model_xgboost/
 tags:
   - XGBoost
   - Choice Model

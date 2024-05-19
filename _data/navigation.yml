@@ -4,14 +4,14 @@ main:
   - title: "CV"
     url: /cv/
 
-  - title: "中文简介"
+  - title: "中文简历"
     url: /cv-zh/
-
-  - title: "Reports & Homeworks"
-    url: /publications/
 
   - title: "Blog Posts"
     url: /year-archive/
+
+  - title: "Reports & Homeworks"
+    url: /publications/
     
   - title: "Proof Documents"
     url: /Proof Documents/
