@@ -22,17 +22,18 @@ Work experience
 
 Volunteer Work
 ======
-* 2021: Excellent Volunteer, Freshman Dormitory, Tongji University
-* Participated in Sunshine-Jiayuan Volunteer Service multiple times
-* 2021: Volunteer for Tongji University Homecoming Speech
+* 2021: Excellent Volunteer, Tongji University
+* 2022: Volunteer for Tongji University Homecoming Speech
+* 2023: Participated in Sunshine-Jiayuan Volunteer Service multiple times
 
 Academic Achievements
 ======
 * GPA for each semester: 4.46->4.59->4.72->4.77->4.8
-* Overall GPA: 4.68 (First 5 semesters)
-* CET4: 593
-* CET6: 598
-* IELTS: 7.5
+* Overall GPA: **4.68** (First 5 semesters)
+* Ranking: 15/172（**Top 8.72%**）
+* CET4: **593**
+* CET6: **598**
+* IELTS: **7.5**
 * 2021-2022: Second-class Excellent Student Scholarship, Tongji University
 * 2022-2023: Second-class Excellent Student Scholarship, Tongji University
 * 2022-2023: University-level Excellent Student, Tongji University
@@ -48,16 +49,13 @@ Competitions and Research Projects
   
 Research Interests
 ======
-* Traffic Big Data Analysis (Passenger Flow Prediction, Geographic Information)
-* Traffic Simulation
-* Traffic Algorithm Design
-* Traffic Operations Research Optimization
-* Autonomous Driving, Vehicle-Road Collaboration
-* Traffic Safety
-* Traffic and Environmental Impact, Green Traffic, Low Carbon Traffic
-* Traffic Planning, Design and Control
-* Rail Transit Safety, Efficiency Optimization
-* Logistics
+
+* Big Data Analysis
+* Traffic Simulation, Traffic Algorithm
+* Operations Research 
+* Autonomous Driving, CAV, V2X
+* Traffic and Environmental Impact
+* Logistics Optimization, Supply Chain Management
 
 Courses
 ======
