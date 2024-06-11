@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.S. in Intelligent Transportation Systems Engineering (Traffic Information and Control Systems), Tongji University, Expected 2025
+B.S. in Intelligent Transportation Systems Engineering (*Traffic Information and Control Systems*), **Tongji University**, Expected 2025
 
 Work experience
 ======
@@ -40,12 +40,17 @@ Academic Achievements
 
 Competitions and Research Projects
 ======
-* [1] 2023: Finalist Team Member in the Global Sustainability Supply Chain Student Competition. Responsible for overall scheme design and paper writing. Supervised by [Assistant Professor Lu Miaojia](https://tjjt.tongji.edu.cn/szdw1/jsml2/ysglgcx1/lmj.htm).
-* [2] 2022-2023: Successfully completed the SITP project "Research on Emission Mechanism and Control Technology of Rubber Modified Asphalt Smoke in Urban Roads". Responsible for data analysis and paper writing. Supervised by [Professor Li Hui](https://cst.tongji.edu.cn/cyfc/xsdtr.htm).
-* [3] 2023-2024: Currently working on the SITP project "Research on Rail Transit Travel Demand Simulation Technology Based on Activity Accessibility". Responsible for Anylogic simulation modeling and data analysis. Supervised by [Assistant Professor Chen Enhui](https://tjjt.tongji.edu.cn/info/2970/10190.htm).
-* [4] 2023-2024: Currently working on the National Innovation project "Simulation and Trustworthiness Evaluation of Vehicle-Road Communication Interaction in Complex Traffic Scenarios", already won the second prize in the "Tong Lu Ren" Transportation Technology Competition. Responsible for overall thinking, Veins simulation modeling and experiments, data analysis, and paper writing. Supervised by [Associate Professor Shen Yu](http://steps.group/pd.jsp?id=3).
-* [5] 2022-2023: Achieved excellent midterm results in the Transportation Science and Technology Project "Anthropomorphic Evaluation of Autonomous Driving", no awards received. Responsible for code and paper writing. Supervised by [Professor Du Yuchuan](http://steps.group/pd.jsp?id=1&fromColId=0#_pp=0_489_1).
-* [6] 2024: Currently working on the National College Student Statistical Modeling Competition "Mining and Optimization of Public Transportation Choice Model Based on NHTS Data - Analysis and Policy Support Combining Discrete Choice Model and XGBoost Algorithm". Responsible for overall thinking, code and paper writing. Supervised by [Professor Liu Haobing](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhb.htm).
+[1] 2023: Finalist Team Member in the Global Sustainability Supply Chain Student Competition. Responsible for overall scheme design and paper writing. Supervised by [Assistant Professor Lu Miaojia](https://tjjt.tongji.edu.cn/szdw1/jsml2/ysglgcx1/lmj.htm).
+
+[2] 2022-2023: Successfully completed the SITP project "Research on Emission Mechanism and Control Technology of Rubber Modified Asphalt Smoke in Urban Roads". Responsible for data analysis and paper writing. Supervised by [Professor Li Hui](https://cst.tongji.edu.cn/cyfc/xsdtr.htm).
+
+[3] 2023-2024: Currently working on the SITP project "Research on Rail Transit Travel Demand Simulation Technology Based on Activity Accessibility". Responsible for Anylogic simulation modeling and data analysis. Supervised by [Assistant Professor Chen Enhui](https://tjjt.tongji.edu.cn/info/2970/10190.htm).
+
+[4] 2023-2024: Currently working on the National Innovation project "Simulation and Trustworthiness Evaluation of Vehicle-Road Communication Interaction in Complex Traffic Scenarios", already won the second prize in the "Tong Lu Ren" Transportation Technology Competition. Responsible for overall thinking, Veins simulation modeling and experiments, data analysis, and paper writing. Supervised by [Associate Professor Shen Yu](http://steps.group/pd.jsp?id=3).
+
+[5] 2022-2023: Achieved excellent midterm results in the Transportation Science and Technology Project "Anthropomorphic Evaluation of Autonomous Driving", no awards received. Responsible for code and paper writing. Supervised by [Professor Du Yuchuan](http://steps.group/pd.jsp?id=1&fromColId=0#_pp=0_489_1).
+
+[6] 2024: Currently working on the National College Student Statistical Modeling Competition "Mining and Optimization of Public Transportation Choice Model Based on NHTS Data - Analysis and Policy Support Combining Discrete Choice Model and XGBoost Algorithm". Responsible for overall thinking, code and paper writing. Supervised by [Professor Liu Haobing](https://tjjt.tongji.edu.cn/szdw1/jsml2/jtgcx1/lhb.htm).
   
 Research Interests
 ======
@@ -59,24 +64,15 @@ Research Interests
 
 Courses
 ======
-* Traffic Design
-* Traffic Planning
-* Traffic Engineering
-* Traffic Management and Control
-* Principles of Traffic Systems
-* Transport Economics
-* Operations Research
-* Traffic Science and Technology Innovation Competition
-* Traffic Transport Data Technology
-* Intelligent Rail Transit Systems
-* Unmanned Train Control Systems
-* Rail Transit Operation Management and Control
-* Signals and Systems
-* Principles of Information Transmission
-* Basics of Electronic Technology (Digital + Analog)
-* Theoretical Mechanics
-* Descriptive Geometry
-* Engineering Drawing
+A. **Traffic Courses**: Traffic Design, Transportation  Planning, Traffic Engineering, Traffic Management and Control, Traffic Data Technology;
+
+B. **Operations Research Courses**: Transport Economics, Operations Research;
+
+C. **Rail Transit Courses**: Intelligent Rail Transit Systems, Unmanned Train Control Systems, Rail Transit Operation Management and Control;
+
+D. **Telecommunications Courses**: Principles of Automatic Control, Signals and Systems, Principles of Information Transmission, Basics of Electronic Technology (Digital + Analog);
+
+E. **Civil Engineering Courses**: Theoretical Mechanics, Descriptive Geometry;
 
 Software Skills
 ======
