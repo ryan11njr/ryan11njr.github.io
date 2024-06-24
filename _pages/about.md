@@ -16,3 +16,5 @@ As evident from my academic background, my undergraduate major is in Transportat
 On my website, you can find my English resume on the [CV](/cv) page, and my Chinese resume is included on the [中文简历](/cv-zh) page. The [Blog](/year-archive) page contains introductions to some of the projects I have done and shares of study notes, and the [Reports & Homeworks](/publications) page shares all my current course reports and major assignments for reference. My proof documents can be found on the [Proof Documents](/Proof Documents) page. I hope my website can help you get to know me better.
 
 If you have any questions or suggestions, please feel free to contact me. Thank you for visiting my website!
+
+<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=B3QctBOXDGONz84w4-IXi179oCdAYaBgJiOb9SyjlSU"></script>
