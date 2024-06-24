@@ -17,6 +17,6 @@ On my website, you can find my English resume on the [CV](/cv) page, and my Chin
 
 If you have any questions or suggestions, please feel free to contact me. Thank you for visiting my website!
 
-<div class="clustrmaps-container" style="width: 25%; height: auto;">
+<div class="clustrmaps-container" style="width: 5%; height: auto;">
     <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=B3QctBOXDGONz84w4-IXi179oCdAYaBgJiOb9SyjlSU"></script>
 </div>
