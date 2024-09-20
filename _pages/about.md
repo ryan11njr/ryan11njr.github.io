@@ -20,3 +20,7 @@ If you have any questions or suggestions, please feel free to contact me. Thank 
 <div class="clustrmaps-container" style="width: 20%; height: auto;">
     <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=B3QctBOXDGONz84w4-IXi179oCdAYaBgJiOb9SyjlSU"></script>
 </div>
+
+<div style="position: fixed; bottom: 10px; right: 10px; font-size: 12px;">
+    Last modified:<script>document.write(new Date(document.lastModified).toLocaleString());</script>
+</div>
